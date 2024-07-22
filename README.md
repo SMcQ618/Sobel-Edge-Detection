@@ -1,7 +1,10 @@
 # Sobel-Edge-Detection
 Implemented Sobel Edge Detection using CUDA and OpenCV in a high-performance computing environment in linux.
 
-This program applies the Sobel Edge Detection algorithm using NVIDIA's CUDA in C++ to accelerate processing. Sobel Edge Detection which identifies edges/boundaries in an image by highlighting areas of rapid changes in high constrastThis algorithm is commonly used in image processing and computer vision. Using the algorithm I search the image for edges by calculating gradients in the x and in the y directions.  
+This program applies the Sobel Edge Detection algorithm using NVIDIA's CUDA in C++ to accelerate processing. It was origanally assigned to me from Professor David Kaeli to learn what Sobel Edge Detection is then take any image I want and perform edge detection on it, to detect any significant changes in the image.
+
+First I researched what Sobel was, Sobel Edge Detection is an algorithm which identifies edges/boundaries in an image 
+by highlighting areas of rapid changes in high constrast. This algorithm is commonly used in image processing and computer vision. Using the algorithm I search the image for edges by calculating gradients in the x and in the y directions.  
 The program can work with different image files such as '.jpg' file but can also work with other image files by specifying it. To Find the image in your system, make sure to set the file path correctly otherwise there will be errors with finding the image. 
 
 ## Features
@@ -9,14 +12,45 @@ The program can work with different image files such as '.jpg' file but can also
 - Grayscale Conversion: Using OpenCV's *COLOR_RGB2GRAY* to convert the colored image to gray. 
 - Customizatino of image to suit different images and requirements.
 - Input/Output: Loads image from system or upload to HPC environment, saves image and processes to new image file.
+- Gausian Blurring: reduces noise before edge detection
 
 ## Prerequisites
 - I used C++11, but this program can be used with other versions of C++ if one were to revise the code
-- NVIDIA's CUDA for GPU acceleration
+- NVIDIA's CUDA for GPU acceleration, specificaly CUDA 11.4
 - OpenCV for image processing and for converting from color to grayscale using 
 
-The output after
+To compile the code, ensure you have a compatible 'nvcc' and C++ compiler and GPU installed. an example build command is `nvcc -arch=sm_35 file_name.cu -o file_executable $(pkg-config --cflags --libs opencv)`. Then do the normal execution method in Linux. 
+Be sure to adjust the command according to your CUDA, OpenCV, and GPU setup.
+
+## Results
+Input image before applying Sobel:
+![test_photo](https://github.com/user-attachments/assets/09ca2852-1290-4a29-a1b6-caf135e35421)
+
+Output image after applying Sobel:
 ![image](https://github.com/user-attachments/assets/2b114bd7-b604-4e7d-9e92-7bd05506fbe3)
+
+The dimensions of the image to ensure to ensure that the image was being processed succesfully: 
+
+Image has been loaded 
+
+Dimensions: 1127, 683 
+
+Number of channels: 3 
+
+Image has been converted. 
+
+Dimesnsion of gray version: 1127, 683
+
+Number of grey channels: 1 
+
+Blurred image dimensions: 1127 x 683 
+
+Thresholded image dimensions: 1127 x 683 
+
+Edge detection has been performed and saved to another file. 
+
+## Author
+Stephen Sodipo
 
 ## Contributing
 Contributions are welcome, if you would like to contribute to the project please complete the following steps:
@@ -25,3 +59,13 @@ Contributions are welcome, if you would like to contribute to the project please
 3. Make your changes and commit them
 4. Push to the branch
 5. Create a new Pull Request
+
+## Resources Used: 
+- https://homepages.inf.ed.ac.uk/rbf/HIPR2/sobel.htm
+- https://medium.com/@deepika.vadlamudi/implementing-a-sobel-filter-with-cuda-in-python-2b9b18485e31
+- https://danyele.github.io/lecture_notes/SPD_Project_Report_Daniele_Gadler_5_0.pdf
+- https://stackoverflow.com/questions/9094941/compiling-opencv-in-c
+- https://docs.opencv.org/3.4/d8/d01/group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0ae50d0c66ee53e974234ac84cf51d1d4e
+- https://www.tutorialspoint.com/how-to-convert-color-spaces-in-opencv-using-cplusplus
+- https://github.com/lukas783/CUDA-Sobel-Filter/tree/master
+- https://iopscience.iop.org/article/10.1088/1757-899X/1045/1/012016/pdf
