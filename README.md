@@ -61,11 +61,11 @@ Contributions are welcome, if you would like to contribute to the project please
 5. Create a new Pull Request
 
 ## Resources Used: 
-- https://homepages.inf.ed.ac.uk/rbf/HIPR2/sobel.htm
-- https://medium.com/@deepika.vadlamudi/implementing-a-sobel-filter-with-cuda-in-python-2b9b18485e31
-- https://danyele.github.io/lecture_notes/SPD_Project_Report_Daniele_Gadler_5_0.pdf
-- https://stackoverflow.com/questions/9094941/compiling-opencv-in-c
-- https://docs.opencv.org/3.4/d8/d01/group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0ae50d0c66ee53e974234ac84cf51d1d4e
-- https://www.tutorialspoint.com/how-to-convert-color-spaces-in-opencv-using-cplusplus
-- https://github.com/lukas783/CUDA-Sobel-Filter/tree/master
-- https://iopscience.iop.org/article/10.1088/1757-899X/1045/1/012016/pdf
+- Image Processing Learnging Resources page on what the [Sobel Edge Detector](https://homepages.inf.ed.ac.uk/rbf/HIPR2/sobel.htm) is.
+- When researching what Sobel was I came across this article on what Sobel was and how you could connect CUDA to it: [Implementing a Sobel Filter with CUDA in Python](https://medium.com/@deepika.vadlamudi/implementing-a-sobel-filter-with-cuda-in-python-2b9b18485e31).
+- This Document gave me the inspiration to break the assignment into smaller steps and how to approach each step in a slower fashion, than my initial approach, [Comparison of Sobel in C, OpenCV, and CUDA](https://danyele.github.io/lecture_notes/SPD_Project_Report_Daniele_Gadler_5_0.pdf).
+- Helped me figrue out how to compile the cuda program with opencv: [compiling opencv](https://stackoverflow.com/questions/9094941/compiling-opencv-in-c)
+- Documentation of OpenCV on converting a colored image to the grayscale: [OpenCV Documentation](https://docs.opencv.org/3.4/d8/d01/group__imgproc__color__conversions.html#gga4e0972be5de079fed4e3a10e24ef5ef0ae50d0c66ee53e974234ac84cf51d1d4e)
+- Another source I used to figure out converting the colors [converting colors using OpenCV](https://www.tutorialspoint.com/how-to-convert-color-spaces-in-opencv-using-cplusplus).
+- Stumbled upon this persons repository on how they apprached using a thread to parallize the iamge. [Github Sobel Filter](https://github.com/lukas783/CUDA-Sobel-Filter/tree/master)
+- This was another document that helped me understand Sobel and utilize CUDA to provide performance benefits, as it is parallize processing on the different pixels to speed up the computation compared to a CPU implementation [Implementation of Sobel filter using CUDA](https://iopscience.iop.org/article/10.1088/1757-899X/1045/1/012016/pdf).
