@@ -4,7 +4,7 @@ Implemented Sobel Edge Detection using CUDA and OpenCV in a high-performance com
 This program applies the Sobel Edge Detection algorithm using NVIDIA's CUDA in C++ to accelerate processing. Sobel Edge Detection which identifies edges/boundaries in an image by highlighting areas of rapid changes in high constrastThis algorithm is commonly used in image processing and computer vision. Using the algorithm I search the image for edges by calculating gradients in the x and in the y directions.  
 The program can work with different image files such as '.jpg' file but can also work with other image files by specifying it. To Find the image in your system, make sure to set the file path correctly otherwise there will be errors with finding the image. 
 
-##Features
+## Features
 - Edge Detection: Applying Sobel edge detection to images.
 - Customizatino of image to suit different images and requirements.
 - Input/Output: Loads image from system or upload to HPC environment, saves image and processes to new image file.
