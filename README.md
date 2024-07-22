@@ -9,7 +9,7 @@ The program can work with different image files such as '.jpg' file but can also
 - Customizatino of image to suit different images and requirements.
 - Input/Output: Loads image from system or upload to HPC environment, saves image and processes to new image file.
 
-##Prerequisites
+## Prerequisites
 - I used C++11, but this program can be used with other versions of C++ if one were to revise the code
 - NVIDIA's CUDA for GPU acceleration
 - OpenCV for image processing and for converting from color to grayscale using 
@@ -17,7 +17,7 @@ The program can work with different image files such as '.jpg' file but can also
 The output after
 ![image](https://github.com/user-attachments/assets/2b114bd7-b604-4e7d-9e92-7bd05506fbe3)
 
-##Contributing
+## Contributing
 Contributions are welcome, if you would like to contribute to the project please complete the following steps:
 1. Fork the repository
 2. Create a new branch
