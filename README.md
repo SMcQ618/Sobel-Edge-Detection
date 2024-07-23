@@ -27,7 +27,7 @@ Input image before applying Sobel:
 ![test_photo](https://github.com/user-attachments/assets/09ca2852-1290-4a29-a1b6-caf135e35421)
 
 Output image after applying Sobel:
-![image](https://github.com/user-attachments/assets/2b114bd7-b604-4e7d-9e92-7bd05506fbe3)
+![Screenshot 2024-07-22 162056](https://github.com/user-attachments/assets/632cd295-923f-4cab-a0f2-fcaa18606eec)
 
 The dimensions of the image to ensure to ensure that the image was being processed succesfully: 
 
