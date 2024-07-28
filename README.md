@@ -7,6 +7,16 @@ First I researched what Sobel was, Sobel Edge Detection is an algorithm which id
 by highlighting areas of rapid changes in high constrast. This algorithm is commonly used in image processing and computer vision. Using the algorithm I search the image for edges by calculating gradients in the x and in the y directions.  
 The program can work with different image files such as '.jpg' file but can also work with other image files by specifying it. To Find the image in your system, make sure to set the file path correctly otherwise there will be errors with finding the image. 
 
+## Design an Implementation
+To achieve the detection, I plan to:
+- First take the image and convert it from a RGB to a Gray-Scaale format. This can be done using OpenCV to load the image and convert it to the grayscale.
+- Once that is completed do a use an invariant operation like thresholding to create a binary image for any dramatic changes or blurring.
+- Perform the Edge Detection using a Sobel function and CUDA (this can be looked into based of how other people have implemented Sobel in C or Python)
+  - Make sure to use the correct version of CUDA based off the GPU that will be given. Also check the version of OpenCV to use as well. 
+- Combine both results by taking the gradients
+- use OpenCV to dave the image to the directory
+- Open the image to verify that the conversion was done correctly and then output the dimensions that had the detection done to them.
+    - Figure out the command that allows you to open an image in Linux 
 ## Features
 - Edge Detection: Applying Sobel edge detection to images.
 - Grayscale Conversion: Using OpenCV's *COLOR_RGB2GRAY* to convert the colored image to gray. 
