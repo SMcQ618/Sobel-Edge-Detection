@@ -20,7 +20,7 @@ To achieve the detection, I plan to:
 ## Features
 - Edge Detection: Applying Sobel edge detection to images.
 - Grayscale Conversion: Using OpenCV's *COLOR_RGB2GRAY* to convert the colored image to gray. 
-- Customizatino of image to suit different images and requirements.
+- Customization of image to suit different images and requirements.
 - Input/Output: Loads image from system or upload to HPC environment, saves image and processes to new image file.
 - Gausian Blurring: reduces noise before edge detection
 
