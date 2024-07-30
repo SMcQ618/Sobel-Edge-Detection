@@ -9,7 +9,7 @@ The program can work with different image files such as '.jpg' file but can also
 
 ## Design an Implementation
 To achieve the detection, I plan to:
-- First take the image and convert it from a RGB to a Gray-Scaale format. This can be done using OpenCV to load the image and convert it to the grayscale.
+- First take the image and convert it from a RGB to a Gray-Scale format. This can be done using OpenCV to load the image and convert it to the grayscale.
 - Once that is completed do a use an invariant operation like thresholding to create a binary image for any dramatic changes or blurring.
 - Perform the Edge Detection using a Sobel function and CUDA (this can be looked into based of how other people have implemented Sobel in C or Python)
   - Make sure to use the correct version of CUDA based off the GPU that will be given. Also check the version of OpenCV to use as well. 
