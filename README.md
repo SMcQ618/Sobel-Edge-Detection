@@ -14,7 +14,7 @@ To achieve the detection, I plan to:
 - Perform the Edge Detection using a Sobel function and CUDA (this can be looked into based of how other people have implemented Sobel in C or Python)
   - Make sure to use the correct version of CUDA based off the GPU that will be given. Also check the version of OpenCV to use as well. 
 - Combine both results by taking the gradients
-- use OpenCV to dave the image to the directory
+- use OpenCV to save the image to the directory
 - Open the image to verify that the conversion was done correctly and then output the dimensions that had the detection done to them.
     - Figure out the command that allows you to open an image in Linux 
 ## Features
